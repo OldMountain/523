@@ -10,7 +10,6 @@ import java.util.List;
  *
  * @author luhangqi
  * 作者单位：
- * 联系方式：
  * 创建时间：2014年6月28日
  * @version 1.0
  */
