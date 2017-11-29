@@ -12,7 +12,14 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * 类名称：Generator.java
+ * 类描述：
+ *
+ * @author luhangqi
+ * 作者单位：
+ * 创建时间：2014年6月28日
+ */
 public class Generator {
     public static void main(String[] args) {
         try {
