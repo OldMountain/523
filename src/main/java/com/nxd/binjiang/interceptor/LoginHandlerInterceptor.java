@@ -1,9 +1,9 @@
 package com.nxd.binjiang.interceptor;
 
-import com.moorgen.entity.MenuModel;
-import com.moorgen.entity.UserModel;
-import com.moorgen.util.Const;
-import com.moorgen.util.RightsHelper;
+import com.nxd.binjiang.entity.system.Menu;
+import com.nxd.binjiang.entity.system.User;
+import com.nxd.binjiang.util.Const;
+import com.nxd.binjiang.util.RightsHelper;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
@@ -18,7 +18,7 @@ import java.util.Map;
  * 类名称：LoginHandlerInterceptor.java
  * 类描述：
  *
- * @author moorgen
+ * @author nxd
  * 作者单位：
  * 联系方式：
  * 创建时间：2015年1月1日
@@ -40,7 +40,7 @@ public class LoginHandlerInterceptor extends HandlerInterceptorAdapter {
                 e.printStackTrace();
             }
             Session session = currentUser.getSession();
-            UserModel user = (UserModel) session.getAttribute(Const.SESSION_USER);
+            User user = (User) session.getAttribute(Const.SESSION_USER);
             if (user != null) {
 
                 //判断是否拥有当前点击菜单的权限（内部过滤,防止通过url进入跳过菜单权限）
@@ -49,7 +49,7 @@ public class LoginHandlerInterceptor extends HandlerInterceptorAdapter {
                  * 根据按钮权限，授权按钮(当前点的菜单和角色中各按钮的权限匹对)
                  */
                 Boolean b = true;
-                List<MenuModel> menuList = (List) session.getAttribute(Const.SESSION_allmenuList); //获取菜单列表
+                List<Menu> menuList = (List) session.getAttribute(Const.SESSION_allmenuList); //获取菜单列表
                 path = path.substring(1, path.length());
                 for (int i = 0; i < menuList.size(); i++) {
                     if (menuList.get(i).getSubMenu() == null || menuList.get(i).getSubMenu().size() < 1) {

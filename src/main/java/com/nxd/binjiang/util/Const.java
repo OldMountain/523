@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationContext;
 /**
  * 项目名称：
  *
- * @author:moorgen
+ * @author:nxd
  */
 public class Const {
 
@@ -96,6 +96,6 @@ public class Const {
     public static String ALIPAY_SUCCESS_URL = "http://192.168.0.20:8089/pmswechat/book-suc.html";
     public static final String ALIPAY_NOTIFY_URL = PropertiesUtils.findPropertiesKey("alipay.notify.url");
 
-    public static final String MOORGEN_SPLIT = "#nxd523#";
+    public static final String nxd_SPLIT = "#nxd523#";
 
 }

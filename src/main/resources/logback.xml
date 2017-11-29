@@ -25,16 +25,16 @@
         <!--See http://logback.qos.ch/manual/appenders.html#RollingFileAppender-->
         <!--and http://logback.qos.ch/manual/appenders.html#TimeBasedRollingPolicy-->
         <!--for further documentation-->
-        <file>${catalina.home}/logs/MOORGEN_log/PurePro_</file>
+        <file>${catalina.home}/logs/nxd_log/PurePro_</file>
         <encoder>
-            <pattern>[MOORGEN_sys] %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <pattern>[nxd_sys] %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${catalina.home}/logs/MOORGEN_log/PurePro_.%d{yyyy-MM-dd'.log'}</fileNamePattern>
+            <fileNamePattern>${catalina.home}/logs/nxd_log/PurePro_.%d{yyyy-MM-dd'.log'}</fileNamePattern>
         </rollingPolicy>
     </appender>
 
-    <logger name="com.moorgen.dao" level="DEBUG" />
+    <logger name="com.nxd.dao" level="DEBUG" />
     <logger name="org.mybatis">
         <level value="TRACE"/>
     </logger>

@@ -1,8 +1,8 @@
 package com.nxd.binjiang.util;
 
 import com.alibaba.fastjson.JSONObject;
-import com.moorgen.entity.ResultModel;
-import com.moorgen.enumtype.ResultEnum;
+import com.nxd.entity.ResultModel;
+import com.nxd.enumtype.ResultEnum;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,7 +14,7 @@ public class SmsUtils {
     private static String signature = "828f4967c010df4df740243bb1926e99";
     private static String postUrlSaiYou = "https://api.mysubmail.com/message/send";
     private static String postUrlSaiYouGuoJi = "https://api.mysubmail.com/internationalsms/send";
-    private static String sign = "【moorgen】";
+    private static String sign = "【nxd】";
 
     public static void main(String[] args) {
         SmsUtils.sendSMS("Your verification code is: 123456,keep it to yourself!","18251912734");
