@@ -13,6 +13,7 @@ import com.google.gson.Gson;
  * @version 1.0
  */
 public class User {
+
     /**
      * @mbg.generated 2017-09-27
      */
