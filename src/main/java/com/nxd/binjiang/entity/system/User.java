@@ -6,7 +6,7 @@ import com.google.gson.Gson;
  * 类名称：User.java
  * 类描述：
  *
- * @author moorgen
+ * @author luhangqi
  * 作者单位：
  * 联系方式：
  * 创建时间：2014年6月28日
